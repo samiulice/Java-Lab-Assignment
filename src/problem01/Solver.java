@@ -4,6 +4,10 @@ public class Solver {
     protected static StringBuilder DecToBin(int number){
         int rem;
         StringBuilder temp = new StringBuilder();
+        if(number == 0){
+            temp.append(0);
+            return temp;
+        }
         while(number != 0){
             rem = number % 2;
             temp.append(rem);
