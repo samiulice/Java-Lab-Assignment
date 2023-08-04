@@ -6,18 +6,18 @@ public class Solver {
 
         String[] arr = str.split(" ");
 
-        int count = 0, max_count = 0;
+        int count, max_count = 0;
         String word = "";
-        for(int i = 0; i < arr.length; i++){
+        for(String i:arr){
             count = 0;
-            for(int j = 0; j < arr.length; j++){
-                if(arr[j].equals(arr[i])){
+            for(String j:arr){
+                if(j.equals(i)){
                     count++;
                 }
             }
             if(count > max_count){
                 max_count = count;
-                word = arr[i];
+                word = i;
             }
         }
 
@@ -28,9 +28,9 @@ public class Solver {
 
         String[] arr = str.split(" ");
         String temp = arr[0];
-        for(int i = 0; i < arr.length; i++){
-            if(temp.length() < arr[i].length()){
-                temp = arr[i];
+        for(String i:arr){
+            if(temp.length() < i.length()){
+                temp = i;
             }
         }
         return temp;
