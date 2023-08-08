@@ -14,7 +14,7 @@ public class Library {
         System.out.println(bookTitle+" added to the library");
     }
     public void issueBooks(String bookTitle){
-        int i, j, n = this.availableBooks.size();
+        int i, n = this.availableBooks.size();
         for (i = 0; i < n; i++){
             if(bookTitle.equals(this.availableBooks.get(i))){
                 this.availableBooks.remove(i);
