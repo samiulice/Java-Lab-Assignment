@@ -7,10 +7,6 @@ public class Library {
     ArrayList<String> issueBooks = new ArrayList<>();
 
     public Library() {}
-    public Library(ArrayList<String> availableBooks, ArrayList<String> issueBooks) {
-        this.availableBooks = availableBooks;
-        this.issueBooks = issueBooks;
-    }
 
     public void addBook(String bookTitle){
 
