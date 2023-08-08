@@ -27,7 +27,7 @@ public class Library {
         System.out.println(bookTitle+" Not available");
     }
     public void returnBooks(String bookTitle){
-        int i, j, n = this.issueBooks.size();
+        int i, n = this.issueBooks.size();
         for (i = 0; i < n; i++){
             if(bookTitle.equals(this.issueBooks.get(i))){
                 this.issueBooks.remove(i);
@@ -47,7 +47,7 @@ public class Library {
             System.out.println(i);
         }
     }
-    public void displayissueBooks(){
+    public void displayIssueBooks(){
         if(this.issueBooks.isEmpty()){
             System.out.println("No books available in the issue list");
             return;

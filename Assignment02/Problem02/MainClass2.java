@@ -29,7 +29,7 @@ public class MainClass2 {
                 myLibrary.displayAvailableBooks();
             }
             else if(x.equals("5")){
-                myLibrary.displayissueBooks();
+                myLibrary.displayIssueBooks();
             }
             else if(x.equals("0")){
                 return;
