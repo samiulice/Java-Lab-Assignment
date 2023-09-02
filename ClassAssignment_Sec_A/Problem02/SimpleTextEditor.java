@@ -18,6 +18,10 @@ public class SimpleTextEditor {
         txt.setBounds(65,80,300,30);
         undo.setBounds(370,80,80,30);
         clr.setBounds(455,80,80,30);
+        lb.setFont(new Font("TimesRoman", Font.BOLD, 14));
+        txt.setFont(new Font("TimesRoman", Font.BOLD, 14));
+        undo.setFont(new Font("TimesRoman", Font.BOLD, 14));
+        clr.setFont(new Font("TimesRoman", Font.BOLD, 14));
         fm.add(lb);
         fm.add(txt);
         fm.add(undo);
