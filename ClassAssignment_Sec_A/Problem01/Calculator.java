@@ -24,16 +24,18 @@ public class Calculator {
         TextField outputTxt = new TextField();
 
 
-        add.setFont(new Font("Times New Roman", Font.BOLD, 25));
-        sub.setFont(new Font("Times New Roman", Font.BOLD, 25));
-        mul.setFont(new Font("Times New Roman", Font.BOLD, 25));
-        div.setFont(new Font("Times New Roman", Font.BOLD, 25));
-        equal.setFont(new Font("Times New Roman", Font.BOLD, 25));
-        clr.setFont(new Font("Times New Roman", Font.BOLD, 15));
-        inputLb.setFont(new Font("Times New Roman", Font.BOLD, 15));
-        inputTxt.setFont(new Font("Times New Roman", Font.BOLD, 15));
-        outputLb.setFont(new Font("Times New Roman", Font.BOLD, 15));
-        outputTxt.setFont(new Font("Times New Roman", Font.BOLD, 15));
+        Font fontA = new Font("TimesRoman", Font.BOLD, 25);
+        Font fontB = new Font("TimesRoman", Font.BOLD, 15);
+        add.setFont(fontA);
+        sub.setFont(fontA);
+        mul.setFont(fontA);
+        div.setFont(fontA);
+        equal.setFont(fontA);
+        clr.setFont(fontB);
+        inputLb.setFont(fontB);
+        inputTxt.setFont(fontB);
+        outputLb.setFont(fontB);
+        outputTxt.setFont(fontB);
         fm.setBounds(400,300,480,200);
         add.setBounds(30,60,40,40);
         sub.setBounds(80,60,40,40);
@@ -57,7 +59,6 @@ public class Calculator {
         fm.add(clr);
         fm.add(inputLb);
         fm.add(inputTxt);
-        fm.add(equal);
         fm.add(outputLb);
         fm.add(outputTxt);
         fm.setResizable(false);
@@ -119,24 +120,21 @@ public class Calculator {
                     }
                 }
                 num[index] = Double.valueOf(temp);
-                System.out.println(num[0]);
-                System.out.println(num[1]);
-                System.out.println(sign);
                 if (sign == 1){
-                    outputTxt.setText(String.valueOf((double) num[0]+num[1]));
+                    outputTxt.setText(String.valueOf((num[0]+num[1])));
                 }
                 else if (sign == 2){
-                    outputTxt.setText(String.valueOf((double) num[0]-num[1]));
+                    outputTxt.setText(String.valueOf((num[0]-num[1])));
                 }
                 else if (sign == 3){
-                    outputTxt.setText(String.valueOf((double) num[0]*num[1]));
+                    outputTxt.setText(String.valueOf((num[0]*num[1])));
                 }
                 else if (sign == 4){
                     if(num[1] == 0) {
                         outputTxt.setText("Invalid");
                     }
                     else {
-                        outputTxt.setText(String.valueOf((double) num[0] / num[1]));
+                        outputTxt.setText(String.valueOf(( num[0] / num[1])));
                     }
                 }
 
