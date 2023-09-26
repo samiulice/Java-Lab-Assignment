@@ -1,4 +1,4 @@
-package problme01;
+package Problme01;
 
 public class CustomExceptionClass extends Exception{
     CustomExceptionClass(String s){
