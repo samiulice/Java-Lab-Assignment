@@ -11,7 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ClassAssignment_Sec_A" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Assignment03_GUI" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Exception Handling" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ExceptionHandling" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
