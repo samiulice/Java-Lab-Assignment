@@ -9,6 +9,6 @@ public class Main {
         System.out.print("Enter a sentence: ");
         String str = input.nextLine();
         System.out.println("Frequently used word: " + Solver.MaxUsedWord(str));
-        System.out.println("Word that has maximum length: " + Solver.wordWithMaxLenght(str));
+        System.out.println("Word that has maximum length: " + Solver.wordWithMaxLength(str));
     }
 }

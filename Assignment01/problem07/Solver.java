@@ -24,7 +24,7 @@ public class Solver {
         return word;
     }
 
-    public static String wordWithMaxLenght(String str){
+    public static String wordWithMaxLength(String str){
 
         String[] arr = str.split(" ");
         String temp = arr[0];
