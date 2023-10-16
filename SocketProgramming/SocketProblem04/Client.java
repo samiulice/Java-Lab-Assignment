@@ -9,9 +9,9 @@ import java.util.Arrays;
 public class Client {
     public static void main(String[] args) throws IOException {
         Socket sc = new Socket("localhost", 105);
+        double []arr = {4.51,9.6,4.4,10.85}; //29.36
 
         DataOutputStream output = new DataOutputStream(sc.getOutputStream());
-        double []arr = {4.51,9.6,4.4,10.85}; //29.36
         output.writeUTF(Arrays.toString(arr));
 
         DataInputStream input = new DataInputStream(sc.getInputStream());
