@@ -1,7 +1,0 @@
-Student Information:#####################
-Department of Information and Communication Engineering
-Name: Samiul Bashir
-ID: 2010277105
-Session: 2019-20
-Current Year: 3rd
-
