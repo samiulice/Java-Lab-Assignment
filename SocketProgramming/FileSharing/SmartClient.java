@@ -8,8 +8,6 @@ public class SmartClient {
         try{
             Socket clientSoc = new Socket("localhost", 105);
             DataInputStream inputStream = new DataInputStream(clientSoc.getInputStream());
-            DataOutputStream outputStream = new DataOutputStream(clientSoc.getOutputStream());
-
             String fileName = "SocketProgramming/FileSharing/output" + inputStream.readUTF();
             File file = new File(fileName);
             FileOutputStream fileOutputStream = new FileOutputStream(file);
@@ -26,7 +24,7 @@ public class SmartClient {
             inputStream.close();
             clientSoc.close();
         }catch (Exception e){
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
 
     }

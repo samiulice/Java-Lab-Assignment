@@ -1,12 +1,7 @@
 package FileSharing;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.net.ServerSocket;
-import java.net.Socket;
-
+import java.io.*;
+import java.net.*;
 public class SmartServer {
     public static void main(String[] args) throws Exception{
         try{
@@ -34,7 +29,7 @@ public class SmartServer {
             socket.close();
             serverSocket.close();
         }catch (Exception e){
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
     }
 }
